@@ -1,0 +1,503 @@
+  /*  MAIN CSS    */
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Kaushan+Script&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Kaushan+Script&family=Merriweather:wght@300&family=Square+Peg&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+html 
+  {
+   scroll-behavior: smooth;
+  }
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+ }
+
+
+h1
+ {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  color: #ed143d;
+ }
+
+ h2
+ {
+  font-family: 'Carter One', cursive;
+ }
+
+h3
+{
+  font-family: 'Merriweather', serif;
+}
+
+
+ .p-90
+ {
+  padding: 90px 0px;
+ }
+
+ .pt-60
+ {
+  padding-top: 60px;
+ }
+	
+/*  NAVBAR CSS START */
+
+    .navbar{
+     background-color: #fff;
+    }
+
+    .scrolled{
+        background-color:#000;
+    }
+
+    .navbar-nav ul{
+     text-align: center;
+     position: relative;
+    }
+   
+    .navbar-nav li{
+     margin:0 10px;
+     
+    }
+
+    .navbar-nav li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ed143d!important;
+    }
+
+   .navbar-nav li a:hover{
+    color: #a80d2b!important;
+    }
+
+
+   .navbar-dark .navbar-toggler 
+   {
+    border-color: transparent;
+    border:none;
+    outline: none;
+   }
+
+   .toggle i
+    {
+      color: #ed143d;
+      font-size: 35px;
+    }
+  
+   /*  NAVBAR CSS END */
+
+
+/* MAIN SLIDER CSS START */
+.carousel-item
+{
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+
+.carousel-item img
+{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay
+{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  z-index: 1;              
+
+}
+
+.carousel-caption
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h2
+{
+  line-height: 40px;
+}
+
+.carousel-caption a
+{
+  background: #fff;
+  text-decoration: none;
+  font-family: 'Carter One', cursive;
+  color: #ed143d!important;
+  font-weight: 600;
+}
+
+.carousel-caption a:hover
+{
+  text-decoration: none;
+  color: #c00b2d!important;
+  font-weight: 600;
+}
+
+.carousel-indicators li
+{
+  height: 20px;
+  width: 20px;
+  border:2px solid #fff;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon 
+{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+/*SLIDER CSS END */
+@media only screen and (max-width: 768px){
+.carousel-item
+{
+  height: 100vh;
+  position: relative;
+}
+
+}
+
+@media only screen and (max-width: 576px)
+{
+.carousel-item
+{
+  height: 80vh;
+  position: relative;
+}
+
+.carousel-item img
+{
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-indicators li
+{
+  display: none;
+}
+
+.carousel-caption
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+}
+
+} 
+
+@media only screen and (max-width: 425px)
+{
+
+.carousel-item
+{
+  height: 100vh;
+  position: relative;
+}
+
+.carousel-item img
+{
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80%);
+}
+
+.carousel-caption h2
+{
+  font-size: 25px;
+}
+
+.about-us ul li img
+{
+ height: 30px!important;
+ width: 30px!important;
+ transition: all 0.5s;
+}
+
+
+} 
+   /* MAIN SLIDER CSS END */
+
+ /* ABOUT US CSS START */
+
+ .about-us
+ {
+  position: relative;
+  overflow: hidden;
+ }
+
+ .about-us #particles-js
+ {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+ }
+
+
+.about-us .about-img
+{
+  height: 300px;
+  width: 400px;
+  position: relative;
+}
+
+.about-us .about-img img
+{
+  height: 100%;
+  width: 100%;
+}
+
+.about-us h3
+ {
+  font-weight: 600;
+ }
+
+ .about-us p
+ {
+  text-align: justify;
+ }
+
+.about-us ul
+{
+  display: flex;
+}
+.about-us ul li
+{
+  padding: 15px 20px 0px 0px;
+}
+
+.about-us ul li img
+{
+ height: 40px;
+ width: 40px;
+ transition: all 0.5s;
+}
+
+.about-us ul li img:hover
+{
+box-shadow: 0px 0px 20px rgba(237,20,61,0.3);
+transform: translateY(-10px);
+}
+
+
+
+
+ /* ABOUT US CSS END */
+
+ /* SERVICE CSS START */
+.service
+{
+  background: #f0f0f0;
+}
+
+.service .service-text
+{
+  background: #fff;
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+.service .service-text:hover
+{
+ box-shadow: 0px 0px 20px rgba(237,20,61,0.2);
+ transform: translateY(-20px);
+}
+
+.service .service-text i
+{
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #ed143d!important;
+}
+
+.service .service-text h4
+{
+  margin-bottom: 20px;
+}
+
+
+ /* SERVICE CSS END */
+
+ /* PORTFOLIO CSS START */
+
+ .portfolio .img-box
+ {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+ }
+
+ .portfolio .img-box img
+ {
+   transition: all 1s;
+ }
+
+ .portfolio .img-box img:hover
+ {
+  transform: scale(1.1);
+ }
+
+ /* PORTFOLIO CSS END */
+
+ /* CONTACT CSS START */
+.contact
+{
+  background: #f0f0f0;
+}
+.contact .contact-box
+{
+  cursor: pointer;
+  margin-bottom: 30px;
+  padding: 30px 0px;
+  transition: all 1s;
+}
+
+.contact .contact-box:hover
+{
+  box-shadow: 0px 0px 20px rgba(237,20,61,0.2);
+  transform: translateY(-20px);
+}
+
+.contact .contact-box i
+{
+  font-size: 30px;
+  color: #ed143d;
+  margin-bottom: 30px;
+}
+ /* CONTACT CSS END */
+
+ /* FOOTER CSS START */
+ .footer
+ {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0px;
+  line-height: 30px;
+ }
+
+ .footer span a
+ {
+  color: #ed143d;
+  cursor: pointer;
+  text-decoration: none;
+ }
+ /* FOOTER CSS END */
+
+
+ /* SCROLL TOP BUTTON CSS END */
+
+
+
+.to-top {
+  background:#ed143d;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:25px;
+  color:#fff;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top:hover{
+  background: #c5092c;
+  color: #fff;
+  text-decoration: none;
+  transform:scale(1.2) translateY(-15px);
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+
+
+
+/****** PRE LOADER *****/
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+}
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ed143d;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+    animation-delay: 0.5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
