@@ -72,8 +72,9 @@ h3
 
     .navbar-nav li a{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #ed143d!important;
+    text-decoration: none;
     }
 
    .navbar-nav li a:hover{
@@ -374,7 +375,7 @@ transform: translateY(-10px);
 
  /* PORTFOLIO CSS START */
 
- .portfolio .img-box
+ .projects .img-box
  {
   display: flex;
   justify-content: center;
@@ -382,12 +383,12 @@ transform: translateY(-10px);
   margin-bottom: 30px;
  }
 
- .portfolio .img-box img
+ .projects .img-box img
  {
    transition: all 1s;
  }
 
- .portfolio .img-box img:hover
+ .projects .img-box img:hover
  {
   transform: scale(1.1);
  }
